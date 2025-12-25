@@ -2,7 +2,7 @@ async function movie() {
 
     let recupe = document.getElementById('element').value
 
-    const movie = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=548a69b3&t=${recupe}`)
+    const movie = await fetch(`http://www.omdbapi.com/?&apikey=548a69b3&t=${recupe}`)
     if(!movie.ok)
         throw new Error('error value');
     const data = await movie.json()
